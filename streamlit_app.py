@@ -21,13 +21,13 @@ st.set_page_config(
 )
 
 # Display header and image
-image = "/Users/snpe/Downloads/vehi.png"
+#image = "/Users/snpe/Downloads/vehi.png"
 header_col, image_col = st.columns([15, 5])
 with header_col:
     st.title("Vehicle Insurance Fraud Detection")
     st.write("Insurer's reliable solution for real-time detection of potential fraudulent claims")
-with image_col:
-    st.image("vehi.png", width=250)
+#with image_col:
+    #st.image("vehi.png", width=250)
 with st.sidebar:
     st.title('Load Claim Information')
 
