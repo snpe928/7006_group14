@@ -184,7 +184,7 @@ with tab2:
     st.title('Exploratory Data Analysis')
 
     # Import data
-    data = pd.read_csv('training data.csv')
+    data = pd.read_csv('/Users/snpe/Downloads/training data.csv')
     #data = input_df
 
     # Count the frequency of each category in the chosen variable
