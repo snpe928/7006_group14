@@ -3,14 +3,14 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score, mean_squared_error, classification_report
-from imblearn.over_sampling import SMOTE
-from scipy.stats import skew, kurtosis
+#import matplotlib.pyplot as plt
+#import seaborn as sns
+#from sklearn.preprocessing import StandardScaler
+#from sklearn.ensemble import GradientBoostingClassifier
+#from sklearn.model_selection import train_test_split
+#from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score, mean_squared_error, classification_report
+#from imblearn.over_sampling import SMOTE
+#from scipy.stats import skew, kurtosis
 
 # Set page configuration
 st.set_page_config(
@@ -21,7 +21,7 @@ st.set_page_config(
 )
 
 # Display header and image
-image = "vehi.png"
+image = "/Users/snpe/Downloads/vehi.png"
 header_col, image_col = st.columns([15, 5])
 with header_col:
     st.title("Vehicle Insurance Fraud Detection")
