@@ -119,4 +119,6 @@ if st.sidebar.button('Predict'):
     if predicted_proba[0][1] > threshold + 0.4:
         st.error('**Fraudulent Claim Detected!** \n\n\n *Action Item*: \n\n\n 1. Immediately suspend processing of the fraudulent claim \n\n\n 2. Consult legal counsel and take appropriate legal action \n\n\n 3. Blacklist the customer from purchasing future insurance coverage')
     elif predicted_proba[0][1] > threshold:
-        st.warning('**Suspicious Claim** \n\n\n *Action Item*: \n\n\n 1. Flag suspicious claims and escalate to fraud prevention team for review \n\n\n 2. Gather additional information and
+        st.warning('**Suspicious Claim** \n\n\n *Action Item*: \n\n\n 1. Flag suspicious claims and escalate to fraud prevention team for review \n\n\n 2. Gather additional information and clarify any inconsistencies with customer  \n\n\n 3. Conduct investigation by gathering evidence and contacting relevant parties')
+    else:
+        st.success('**Non-Fraudulent Claim** \n\n\n *Action Item*: \n\n\n 1. Process the claim amount accordingly on FileaClaim portal\n\n\n 2. Notify customer the status of their claim once it is processed \n\n\n 3. Gather feedback from customer after their claim is resolved')
